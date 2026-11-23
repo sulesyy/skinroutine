@@ -27,12 +27,12 @@ a{color:var(--accent)}ul{padding-left:1.2em}li{margin:4px 0}p.meta{color:var(--m
 <h2>Backups</h2>
 <p>If iCloud Backup or computer backups are turned on for your iPhone, app data is included in Apple's device backup. These backups are subject to Apple's privacy terms and are not accessible to us.</p>
 <p>From Profile → Backup you can export all your data (including photos) as a single file and save it wherever you choose (for example iCloud Drive). The file stays where you save it; it is not sent to us.</p>
-<h2>Barcode product lookup</h2>
-<p>When you use "Fill from barcode", only the product's barcode number is sent to Open Beauty Facts (openbeautyfacts.org), an open and free cosmetics database, and the product's name, brand and ingredient list are returned. If the product isn't found there, the same barcode number is sent to the general product database UPCitemdb (upcitemdb.com) for the name and brand. Nothing about you (name, account, location, photos) is sent. Using this feature is optional.</p>
+<h2>Product search by name</h2>
+<p>When you search for a product by name, only the search text you type is sent to Open Beauty Facts (openbeautyfacts.org), an open and free cosmetics database, and matching products' names, brands and ingredient lists are returned. Nothing about you (name, account, location, photos) is sent. Using this feature is optional.</p>
 <h2>Permissions</h2>
 <ul>
 <li><strong>Notifications:</strong> for routine and product reminders. Reminders are scheduled on your device; no notification server is used. You can turn them off at any time in iOS Settings.</li>
-<li><strong>Camera:</strong> used only when you choose to take a photo. Photos stay on your device.</li>
+<li><strong>Camera:</strong> used only when you choose to take a photo. Photos stay on your device; the only exception is a package photo you take to scan an ingredient list with Premium (see the AI assistant section below).</li>
 <li><strong>Photos:</strong> only the photo you pick is imported; the rest of your library is not accessed. If you choose "Save Image" when sharing your routine card, the card is added to Photos; only add-only permission is requested.</li>
 </ul>
 <h2>Analytics, advertising and tracking</h2>
@@ -41,7 +41,8 @@ a{color:var(--accent)}ul{padding-left:1.2em}li{margin:4px 0}p.meta{color:var(--m
 <p>The first time you open the AI assistant, a separate permission screen is shown. If you agree:</p>
 <ul>
 <li><strong>What is sent:</strong> your question; your skin type and goals; ingredients you want to avoid; the names of your routine steps; your products' names, brands, categories, ingredient lists and (if you did one) patch test result.</li>
-<li><strong>What is never sent:</strong> your photos (including label scanning; the text is read on your device), your skin diary and your notes.</li>
+<li><strong>Ingredient list scanning (Premium):</strong> When you use this feature, the package photo you choose or take is passed through our server to Anthropic to read the ingredient list. The photo is processed only for that request and is not stored on our server. Please use only photos of product packaging.</li>
+<li><strong>What is never sent:</strong> your skin photos, your profile photo, your skin diary and your notes.</li>
 <li><strong>Identity:</strong> No account is required. The app creates a random, anonymous user ID for you. It contains no email, name or phone number.</li>
 <li><strong>Where it's processed:</strong> Data is processed on our Supabase servers in the European Union (Ireland); to generate answers, the question and context are sent to our AI provider, Anthropic, outside Türkiye. Your chat history, consent records and daily usage counts are stored on our server.</li>
 <li><strong>Premium:</strong> Purchases are made through Apple; we never see your payment details. To check that a subscription is valid, the Apple-signed transaction ID and expiry date are stored on our server.</li>
